@@ -89,9 +89,9 @@
     ```
 
 ### Estimativas de Tempo:
-Chave SSH: 12-15 minutos
-Criação de repositório no GitHub: 5 minutos
-Configurar Git: 8-10 minutos
-Commit: 20-30 minutos
+- Chave SSH: 12-15 minutos
+- Criação de repositório no GitHub: 5 minutos
+- Configurar Git: 8-10 minutos
+- Commit: 20-30 minutos
 
 ## Fim do Trabalho
