@@ -1,7 +1,3 @@
-Claro! Aqui está a documentação formatada em Markdown:
-
----
-
 # Documentação Equipe 4: Gerência de Configuração
 
 ## Integrantes
@@ -20,12 +16,9 @@ Claro! Aqui está a documentação formatada em Markdown:
 - Todos (ou a maioria) com uma conta no GitHub
 - Se a pessoa for fazer no seu notebook, precisará do Git instalado
 
-## O que vamos fazer?
-Mostrar o passo a passo para configurar a chave SSH do computador do laboratório na conta do GitHub. (15 min)
-
 ## Passo a Passo
 
-### Gerar e Configurar Chave SSH
+### Passo 1: Gerar e Configurar Chave SSH
 1. Gerar a chave SSH:
    ```bash
    ssh-keygen
@@ -38,43 +31,44 @@ Mostrar o passo a passo para configurar a chave SSH do computador do laboratóri
    ```
 3. Abrir o arquivo `id_rsa.pub` com o Bloco de Notas e copiar a chave SSH.
 
-4. Colar a chave SSH na conta do GitHub:
+### Passo 2: Configurar SSH no GitHub e Criar Repositório
+1. Colar a chave SSH na conta do GitHub:
    - Acessar Configurações -> SSH & GPG keys -> New SSH key
    - Colar a chave e salvar como `ufc`
+2. Criar um repositório virtual no GitHub.
 
-### Criar e Clonar Repositório no GitHub
-1. Criar um repositório virtual no GitHub.
-2. Clonar o repositório vazio na área de trabalho:
+### Passo 3: Configurar Git e Realizar o Primeiro Commit
+1. Abrir o Git Bash.
+2. Inicializar o repositório local:
+   ```bash
+   git init
+   ```
+3. Configurar o nome de usuário e o email:
+   ```bash
+   git config user.name "Seu Nome"
+   git config user.email "seu.email@example.com"
+   ```
+4. Clonar o repositório vazio na área de trabalho:
    ```bash
    git clone <url do repositório>
    ```
-
-### Adicionar e Comitar Arquivo README.md
-1. Adicionar um arquivo `README.md` no repositório clonado.
-2. Adicionar todos os arquivos para commit:
+5. Adicionar um arquivo `README.md` no repositório clonado.
+6. Adicionar todos os arquivos para commit:
    ```bash
    git add .
    ```
-3. Fazer o commit:
+7. Configurar a URL do repositório remoto:
+   ```bash
+   git remote set-url origin "git@github.com:<seunomenogithub>/<repositorioqvccriou>.git"
+   ```
+8. Fazer o commit:
    ```bash
    git commit -m "primeiro commit"
    ```
-
-### Configurar URL do Repositório Remoto e Enviar Commit
-1. Configurar a URL do repositório remoto:
-   ```bash
-   git remote set-url origin "git@github.com/<user>/<repositorio>.git"
-   ```
    - Alternativamente, mostrar no próprio PC como copiar a URL pelo GitHub Web.
-2. Enviar o commit:
+9. Enviar o commit:
    ```bash
    git push
    ```
 
-(30 min mínimo)
-
 ## Fim do Trabalho
-
----
-
-Espero que isso ajude! Se precisar de mais ajustes ou informações adicionais, estou à disposição.
