@@ -85,7 +85,7 @@
    - Alternativamente, mostrar no próprio PC como copiar a URL pelo GitHub Web.
 10. Enviar o commit:
     ```bash
-    git push
+    git push -u origin master
     ```
 
 ### Estimativas de Tempo:
